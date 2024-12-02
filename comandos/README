@@ -1,0 +1,9 @@
+Criando ambiente virtual
+    - python -m venv venv
+    - .\venv\Scripts\activate
+    - pip install django 
+
+configurar o git 
+
+Iniciando o projeto
+    - 
