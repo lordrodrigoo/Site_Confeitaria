@@ -1,23 +1,41 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dalia bolos e doçes</title>
-    <link rel="stylesheet" href="{% static "global/css/style.css" %}">
-
+    <title>Confeitaria - Home</title>
+    <link rel="stylesheet" href="{% static 'global/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Dália Bolos e Doces</h1>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/produtos">Produtos</a>
-            <a href="/contato">Contato</a>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#bolos">Bolos decorados</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="{% static 'images/logo/logo_home.png' %}" alt="Logo Dália Moreira">
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#ifood">Ifood</a></li>
+                    <li><a href="#sacola" class="bag-icon">
+                        <img src="{% static 'images/icon/bag-heart-love-svgrepo-com.svg' %}" alt="icone sacola">
+                    <li><a href="#busca" class="search-icon">
+                        <img src="{% static "images/icon/lupa.svg" %}" alt="lupa de busca">
+                    </a></li>
+                    </a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-
-    
 </body>
 </html>

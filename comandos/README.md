@@ -16,4 +16,5 @@
     - Super usuário -> python manage.py createsuperuser
     - Ajuste se preferir idioma e hora no settings .. 
 
-
+# Configurando paginas html
+    - 
