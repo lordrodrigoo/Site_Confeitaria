@@ -1,0 +1,277 @@
+:root {
+    --pink-color: #ff91a4;
+    --maincontent-color: #f7eff4;
+    --gren-color: rgba(95, 202, 199, 0.8);;
+    --font-color: #202020;
+    --gap: 40px
+}
+
+/* Resetando margens e fontes padrão */
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: red;
+    background: var(--maincontent-color);
+    font-family: 'Merienda', cursive;
+}
+
+li {
+    list-style: none;
+    
+}
+a {
+    color: var(--font-color);
+    text-decoration: none;
+    list-style: none;
+}
+
+a:hover {
+    color: var(--pink-color);
+    
+}
+
+.menu-container {
+    display: flex;
+    background: var(--maincontent-color);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-left, .flex-right {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+#lupa, #sacola {
+    height: 30px;
+}
+
+.logo {
+    z-index: 2;
+    margin-top: 6rem;
+}
+
+.logo img {
+    height: 400px;
+}
+
+#mask1 {
+    width: 100%;
+    height: 100%;
+    mask-image: url('images/svg/Rectangle1.png');
+    
+    
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+    
+    background: var(--maincontent-color);
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides div {
+    display: flex; /* Garante que as imagens fiquem lado a lado */
+    justify-content: center; /* Centraliza as imagens horizontalmente (opcional) */
+    align-items: center; /* Centraliza as imagens verticalmente (opcional) */
+    
+}
+
+.mySlides img{
+    height: 588px;
+    
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+/* Fading animation */
+.fade {
+    
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  .testimonials {
+    background-color: var(--maincontent-color);
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .testimonial {
+    max-width: 300px;
+    padding: 20px;
+    background-color: var(--pink-color);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Merienda', cursive;
+  }
+  
+  .testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+
+
+
+  .footer {
+    background: url('images/svg/footer.png') no-repeat top;
+    background-size: cover;
+    text-align: center;
+    color:var(--maincontent-color);
+    
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section img {
+    margin-top: 30px;
+    height: 100px; /* Tamanho ajustado para o coração */
+  }
+  
+  .footer-info {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .footer-social {
+    gap: 20px; /* Espaçamento entre os ícones */
+    
+    
+  }
+
+  .footer-social a {
+    display: inline-block;
+    padding: 25px;
+    border-radius: 50%;
+    background-image: url('images/svg/moldure-icon.svg'); /* Caminho do seu arquivo SVG */
+    background-size: contain; /* Ajusta o SVG para cobrir toda a área */
+    background-position: center; /* Centraliza a moldura */
+    background-repeat: no-repeat; /* Impede que a moldura se repita */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-social a img {
+    width: 30px; /* Tamanho dos ícones */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-social a img {
+    width: 30px; /* Tamanho dos ícones */
+    position: relative; /* Garante que os ícones fiquem em cima da moldura */
+    z-index: 1; /* Garante que os ícones fiquem visíveis em cima da moldura */
+  }
+
+  .footer-social a:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+  }
+
+  /* Novo estilo para o texto do rodapé */
+.footer-credit {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--font-color); /* Ajuste a cor conforme necessário */
+  padding: 30px;
+}
+
+.footer-credit img {
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+
+}
+
+.footer-credit .heart {
+  color: #ff5b5b; /* Cor do coração */
+  font-size: 1.2rem;
+}
+
+
+/*  Responsividade  */
+
+@media screen and (max-width: 700px) {
+  .flex-left {
+    display: none;
+  }
+
+  .flex-right {
+    display: none;
+  }
+
+  .testimonial-container {
+    display: inline-block; 
+  }
+
+  .testimonial {
+    margin-top: 10px;
+  }
+  
+}
+
