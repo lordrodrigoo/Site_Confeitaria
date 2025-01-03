@@ -1,0 +1,23 @@
+{% load static %}
+
+<section class="menu-container">
+    <nav class="flex-left">
+      <li><a href="{% url "produtos" %}">Produtos</a></li>
+      <li><a href="#">Bolos Decorados</a></li>
+      <li><a href="#">Sobre</a></li>
+    </nav>
+
+    <div class="logo">
+      <img src="{% static 'images/logo/logo_home.png' %}" alt="Logo confeitaria" />
+    </div>
+
+    <nav class="flex-right">
+      <li><a href="#">Compre pelo ifood</a></li>
+      <li><a href="#">
+        <img id="sacola" src="{% static 'images/svg/bag-heart-love.svg' %}" alt="sacola" />
+      </a></li>
+      <li><a href="#">
+        <img id="lupa" src="{% static 'images/svg/lupa.svg' %}" alt="lupa" />
+      </a></li>
+    </nav>
+  </section>

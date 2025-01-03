@@ -14,7 +14,7 @@
 }
 
 body{
-    color: red;
+    color: var(--font-color);
     background: var(--maincontent-color);
     font-family: 'Merienda', cursive;
 }
@@ -64,18 +64,14 @@ a:hover {
     height: 400px;
 }
 
-#mask1 {
+#mask {
     width: 100%;
     height: 100%;
-    mask-image: url('images/svg/Rectangle1.png');
-    
-    
-
+    mask-image: url('../../images/svg/Rectangle1.png');
 }
 
 /* Slideshow container */
 .slideshow-container {
-    
     background: var(--maincontent-color);
     display: flex;
     flex-direction: column;
@@ -93,8 +89,8 @@ a:hover {
 
 .mySlides img{
     height: 588px;
-    
 }
+
 
 
 
@@ -127,7 +123,6 @@ a:hover {
 
 /* Fading animation */
 .fade {
-    
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -175,7 +170,7 @@ a:hover {
 
 
   .footer {
-    background: url('images/svg/footer.png') no-repeat top;
+    background: url('../../images/svg/footer.png') no-repeat top;
     background-size: cover;
     text-align: center;
     color:var(--maincontent-color);
@@ -209,7 +204,7 @@ a:hover {
     display: inline-block;
     padding: 25px;
     border-radius: 50%;
-    background-image: url('images/svg/moldure-icon.svg'); /* Caminho do seu arquivo SVG */
+    background-image: url('../../images/svg/moldure-icon.svg'); /* Caminho do seu arquivo SVG */
     background-size: contain; /* Ajusta o SVG para cobrir toda a área */
     background-position: center; /* Centraliza a moldura */
     background-repeat: no-repeat; /* Impede que a moldura se repita */
