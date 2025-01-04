@@ -12,22 +12,22 @@ def bolos_com_cobertura(request):
     return render(request, 'store/bolos_com_cobertura.html')
 
 def bolos_da_vovo(resquest):
-    return render(resquest, 'produtos/bolos_da_vovo.html')
+    return render(resquest, 'store/bolos_da_vovo.html')
 
 def bolos_de_pote(request):
-    return render(request, 'produtos/bolos_de_pote.html')
+    return render(request, 'store/bolos_de_pote.html')
 
 def cones(request):
-    return render(request, 'produtos/cones.html')
+    return render(request, 'store/cones.html')
 
 def copos_felicidade(request):
-    return render(request, 'produtos/copos_felicidade.html')
+    return render(request, 'store/copos_felicidade.html')
 
 def doces_sobremesas(request):
-    return render(request, 'produtos/doces_sobremesas.html')
+    return render(request, 'store/doces_sobremesas.html')
 
 def sobremesas_familia(request):
-    return render(request, 'produtos/sobremesas_familia.html')
+    return render(request, 'store/sobremesas_familia.html')
 
 def bolos_decorados(request):
     return render(request, 'store/bolos_decorados.html')
