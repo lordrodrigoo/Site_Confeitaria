@@ -1,0 +1,96 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copos da Felicidade</title>
+
+    <link rel="stylesheet" href="{% static "global/css/style.css" %}">
+    <link rel="stylesheet" href="{% static "global/css/categoria_produtos.css" %}">
+    <link rel="stylesheet" href="{% static "global/css/produtos.css" %}">
+
+</head>
+<body>
+
+    {% include "global/partials/_menu.html" %}
+
+    <main class="produtos-container">
+        <h1 class="page-title">Copos da Felicidade</h1>
+
+
+        <div class="produtos-grid">
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/copos_felicidade/banoffe.jpg' %}" alt="Copo da felicidade Banoffe">
+                        <h2>Banoffe</h2>
+                        <p>R$ 20,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Revelamos a maravilha que é o Copo da Felicidade Banoffe, uma delícia meticulosamente preparada. Este doce mergulha seus sentidos em uma farofa crocante de bolacha irresistível, harmoniosamente combinada com um doce de leite ultra cremoso. Utilizamos apenas bananas frescas, cuidadosamente selecionadas, e acentuadas pelo toque reconfortante da canela em pó. Para a perfeição final, adicionamos uma generosa camada de Chantininho. Asseguramos um copo fresco, preparado no Dia, repleto de 354ml de pura tentação! Deleite-se com o melhor Copo da Felicidade já criado, e descubra por que é o nosso campeão de vendas no ifood.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/copos_felicidade/ganache_com_morango.PNG' %}" alt="Copo da felicidade ganache com morango">
+                        <h2>Ganache com Morango</h2>
+                        <p>R$ 24,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Fabuloso e lncomparável Copo Morango, copo preparado com Ganache Gourmet de Chocolate Nobre Meio Amargo e Morangos fresquinhos e selecionados. *Produtos Sem Sujeito A Alteraçâo, Vendido Conforme Descriçâo.
+                            Copo fresquinho!
+                            Copo com 354ml.!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/copos_felicidade/morango.jpg' %}" alt="Copo da felicidade morango">
+                        <h2>Morango</h2>
+                        <p>R$ 20,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Apresentamos a você o fabuloso e incomparável Copo da Felicidade Morango. Este copo é meticulosamente preparado com um rico Creme Gourmet de Chocolate Nobre ao Leite, complementado com morangos frescos e selecionados especialmente para você. Além disso, é enriquecido com um delicioso Creme Gourmet de Chocolate Branco e pedaços de Brownie, feitos com os ingredientes mais finos. Para finalizar, acrescentamos um toque de suavidade com o nosso exclusivo Chantininho. Este copo fresquinho preparado no Dia, com 354ml, é a promessa de um momento de puro prazer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/copos_felicidade/sonho_de_valsa.jpg' %}" alt="Copo sonho de valsa">
+                        <h2>Sonho de Valsa</h2>
+                        <p>R$ 20,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Apresentamos o fabuloso e incomparável Copo da Felicidade Sonho de Valsa. Uma deliciosa combinação de Mousse Artesanal de Nutella e o autêntico Bombom Sonho de Valsa, acentuado pela suavidade da Mousse Artesanal de Chocolate Branco Nobre e finalizado com o toque cremoso do Chantininho. Cada copo, com 354ml, é meticulosamente preparado para garantir a máxima frescura. Uma sobremesa irresistível que promete ser a estrela de qualquer refeição. Preparado no Dia! * Produto Sem Sujeito Alteração, Vendido Conforme Descrição!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/copos_felicidade/uva.jpg' %}" alt="Copo da felicidade de uva">
+                        <h2>Uva</h2>
+                        <p>R$ 20,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Descubra o encanto do nosso Copo da Felicidade Uva, uma criação gastronômica fabulosa e incomparável. Este copo é cuidadosamente preparado com um creme gourmet de chocolate nobre ao leite de qualidade excepcional, acompanhado por uvas frescas e criteriosamente selecionadas. Adicionamos também um creme gourmet de chocolate branco supremo, e pedaços de um brownie suculento feito com os ingredientes mais requintados. Finalizamos com uma cobertura de chantininho irresistível, proporcionando uma experiência gustativa única. O copo tem 354ml e é sempre servido fresquinho, garantindo a máxima satisfação.</p>
+                    </div>
+                </div>
+            </div>
+        <div>
+    </main>
+    
+
+    <script src="{% static 'js/flip_card.js' %}"></script>
+</body>
+</html>

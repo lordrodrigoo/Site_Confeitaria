@@ -1,110 +1,87 @@
-:root {
-    --font-color: #202020;
-    --maincontent-color: #f7eff4;
-    --pink-color: #ff91a4;
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.logo img {
-    height: 300px;
-}
-
-.flex-left, .flex-right {
-    margin-top: 60px;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    font-size: 1.5rem;
-  }
-
-.page-title {
-    color: var(--font-color);
-    background-color:  var(--pink-color);
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 80px;
-}
-
-
-.produtos-container {
-    display: inline-block;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    background: var(--maincontent-color);
-}
-
-
-.categorias-grid {
-    padding: 15px;
+.produtos-grid {
+    padding: 20px;
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
     gap: 20px;
 }
 
-.categoria-item {
-    display: flex;
-    flex-direction: column; /* Faz com que a imagem e o título fiquem empilhados */
-    align-items: center;    /* Centraliza os itens (imagem e título) */
-    justify-content: center; /* Garante que o conteúdo fique bem alinhado no meio */
+.produto {
+    perspective: 1000px; /* Cria a perspectiva para o efeito 3D */
+}
+
+.produto-inner {
     position: relative;
-}
-
-
-.categoria-item img {
-    display: block;
     width: 100%;
-    height: 300px;
-    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho sem distorcer */
+    height: 350px; /* Altura fixa */
+    transition: transform 0.6s; /* Suaviza a rotação */
+    transform-style: preserve-3d;
 }
 
-.categoria-item:hover {
+/* Rotação controlada pelo clique */
+.produto-inner.rotacionado {
+    transform: rotateY(180deg); /* Aplica a rotação quando a classe "rotacionado" for adicionada */
+}
+
+.produto-front, .produto-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Impede que o verso do card seja visível */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.produto-front img {
+    width: 100%;
+    height: 240px; /* Altura fixa para manter o padrão */
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.produto-front h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.produto-front:hover {
     transform: scale(1.05);
 }
 
-.categoria-item h2 {
-    text-align: center;
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: var(--font-color);
-    font-weight: bold;
+.produto-front p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.produto-back {
+    background-color: #f7eff4;
+    transform: rotateY(180deg); /* O verso já começa virado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.produto-back p {
+    font-size: 1rem;
+    color: #333;
 }
 
 
 
-
-
-
-/* Responsividade para telas menores */
-@media screen and (max-width: 950px) {
-    .flex-left, .flex-right {
-        display: none;
-    }
-    .categorias-grid {
-        grid-template-columns: repeat(2, 1fr);
+/* Responsividade */
+@media (max-width: 768px) {
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
 }
 
-
-@media screen and (max-width: 600px) {
-    .categorias-grid {
-        grid-template-columns: 1fr;
-        padding: 15px;
-    }
-
-    .categoria-item img {
-        object-fit: cover;  /* Ajusta a imagem para cobrir o container */
-        width: 100%;        /* Faz a imagem ocupar 100% da largura do container */
-        height: 100%;       /* Ajusta a altura para preencher o container */
+@media (max-width: 480px) {
+    .produtos-grid {
+        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
     }
 }
