@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,45 @@
     <main class="produtos-container">
         <h1 class="page-title">Nossos Produtos</h1>  
         
-        <!-- Botão para exibir as categorias -->
-        <button class="btn-categorias" onclick="toggleCategorias()">Ver Categorias</button>
 
         <!-- Div  com Categorias -->
-        
-        
-    </main>
+        <div class="categorias-grid">
+
+            <div class="categoria-item" onclick="window.location.href='{% url "produtos/bolos_com_cobertura" %}'">
+                <img src="{% static "images/produtos/bolos_com_cobertura/chocolate_com_galak.jpg" %}" alt="Bolos com cobertura">
+                <h2>Bolos com Cobertura</h2>
+            </div>
+
+            <div class="categoria-item" onclick="window.location.href='{% url 'produtos/bolos_da_vovo' %}'">
+                <img src="{% static 'images/produtos/bolos_da_vovo/cenoura.jpg' %}" alt="Bolos da Vovó">
+                <h2>Bolos da Vovó</h2>
+            </div>
+
+            <div class="categoria-item" onclick="window.location.href='{% url 'produtos/bolos_de_pote' %}'">
+                <img src="{% static 'images/produtos/bolos_de_pote/ninho_com_morango.jpg' %}" alt="Bolos de pote">
+                <h2>Bolos de pote</h2>
+            </div>
+
+            <div class="categoria-item" onclick="window.location.href='{% url 'produtos/cones' %}'">
+                <img src="{% static 'images/produtos/cones/rafaello.jpg' %}" alt="cones">
+                <h2>Cones Trufados</h2>
+            </div>
+
+            <div class="categoria-item" onclick="window.location.href='{% url 'produtos/copos_felicidade' %}'">
+                <img src="{% static 'images/produtos/copos_felicidade/ganache_com_morango.PNG' %}" alt="Copos da felicidade">
+                <h2>Copos da Felicidade</h2>
+            </div>
+
+            <div class="categoria-item" onclick="window.location.href='{% url 'produtos/doces_sobremesas' %}'">
+                <img src="{% static 'images/produtos/doces_sobremesas/pave_ouro_branco.jpg' %}" alt="Doces e sobremesas">
+                <h2>Doces e Sobremesas</h2>
+            </div>
+
+            <div class="categoria-item" onclick="window.location.href='{% url 'produtos/sobremesas_familia' %}'">
+                <img src="{% static 'images/produtos/sobremesas_familia/manjar_de_coco.jpg' %}" alt="Doces e sobremesas">
+                <h2>Sobremesas familia</h2>
+            </div>
+        </div>
 
     </main>
 
