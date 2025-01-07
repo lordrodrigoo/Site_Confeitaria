@@ -1,1 +1,104 @@
-{% extends "global/bolos_da_vovo.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos da vovo</title>
+    <link rel="stylesheet" href="{% static "global/css/style.css" %}">
+    <link rel="stylesheet" href="{% static "global/css/categoria_produtos.css" %}">
+    <link rel="stylesheet" href="{% static "global/css/produtos.css" %}">
+    <link rel="icon" href="{% static 'images/icon/favicon.ico' %}" type="image/x-icon">
+
+</head>
+
+<body id='topo'>
+    {% include "global/partials/_menu.html" %}
+
+    <main class="produtos-container">
+        <h1 class='page-title'>Bolos da vovo</h1>
+
+        <h3 class='click-img'>Clique na imagem para mais informações</h3>
+
+        <div class="produtos-grid">
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/bolos_da_vovo/cenoura.jpg' %}" alt="Bolo de Cenoura">
+                        <h2>Bolo de Cenoura</h2>
+                        <p>R$ 25,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Delicioso e Irresistível Bolo Artesanal de Cenoura, bolo preparado com cenouras fresquinhas e selecionadas, bolo super macio e úmido.
+                            Bolo fresquinho, preparado no Dia! Consumo em até 24 horas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/bolos_da_vovo/laranja.jpg' %}" alt="laranja">
+                        <h2>Bolo de laranja</h2>
+                        <p>R$ 25,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Delicioso e Irresistível Bolo Artesanal de Cenoura, bolo preparado com cenouras fresquinhas e selecionadas, bolo super macio e úmido.
+                            Bolo fresquinho, preparado no Dia! Consumo em até 24 horas.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/bolos_da_vovo/mandioca.jpg' %}" alt="Bolo de mandioca">
+                        <h2>Bolo de Mandioca</h2>
+                        <p>R$ 25,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Saboreie nosso irresistível Bolo de Mandioca, uma verdadeira obra-prima artesanal! Cada pedaço é repleto de sabor, graças à mandioca fresquinha e ao coco que usamos em sua preparação. Este bolo, livre de farinha de trigo, se destaca por sua textura super macia e umidade perfeita. Feito e servido no mesmo Dia, garantimos a você um produto sempre fresquinho. Ideal para um delicioso lanche da tarde ou para celebrar momentos especiais. Experimente essa delícia da nossa linha 'Bolo da Vovó'! Consumo em até 24 horas ( Obs Contem Láctose).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/bolos_da_vovo/milho.jpg' %}" alt="Bolo de milho">
+                        <h2>Bolo de Milho</h2>
+                        <p>R$ 25,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Este irresistível Bolo de Milho Cremoso da categoria 'Bolo da Vovó' é uma obra-prima artesanal. Super cremoso e extra fofinho, é preparado com o mais saboroso leite de coco, garantindo umidade e suavidade em cada fatia. A estrela deste bolo, o milho verde fresco, é cuidadosamente selecionado e preparado no próprio Dia, assegurando um sabor autêntico e inigualável. Este é o bolo fresquinho e quentinho que você precisa para alegrar seu paladar. É uma opção perfeita e econômica para adoçar seu Dia ou para presentear alguém especial. Desfrute dessa delícia caseira, feita com carinho e qualidade, que é um verdadeiro sucesso no ifood.
+                        Preparado no Dia! Consumo em até 24 horas. (Obs: Contem Láctose)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/bolos_da_vovo/fuba_erva_doce.jpg' %}" alt="Bolo de Fuba com Erva Doce">
+                        <h2>Bolo de Fuba com erva doce</h2>
+                        <p>R$ 25,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Descubra a irresistível combinação de sabores em nosso Bolo de Fubá com Erva Doce, feito artesanalmente com fubá da mais alta qualidade. Preparado fresquinho no Dia, este bolo traz a autenticidade da erva doce, proporcionando um sabor único e memorável. Perfeito para um lanche aconchegante ou para presentear alguém especial. Uma delícia caseira que remete aos bolos da vovó. Experimente e se apaixone! Produção Diaria! ( Obs Contem Láctose) Consumo em até 24 horas.</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+        </div>
+
+    </main>
+
+    {% include "global/partials/_footer.html" %}
+    <script src="{% static 'js/flip_card.js' %}"></script>
+
+</body>
+</html>

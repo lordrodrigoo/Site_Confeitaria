@@ -1,1 +1,254 @@
-{% extends "global/doces_sobremesas.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces e Sobremesas</title>
+    <link rel="stylesheet" href="{% static "global/css/style.css" %}">
+    <link rel="stylesheet" href="{% static "global/css/categoria_produtos.css" %}">
+    <link rel="stylesheet" href="{% static "global/css/produtos.css" %}">
+    <link rel="icon" href="{% static 'images/icon/favicon.ico' %}" type="image/x-icon">
+
+</head>
+<body id='topo'>
+
+    {% include "global/partials/_menu.html" %}
+
+
+    <main class="produtos-container">
+        <h1 class="page-title">Doces e Sobremesas</h1>
+
+        <h2>Clique na imagem para mais informações</h2>
+
+
+        <div class="produtos-grid">
+
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/6brigadeiros_granule.jpg' %}" alt=" caixa com 6 brigadeiros">
+                        <h2>Caixa com 6 brigadeiros granule </h2>
+                        <p>R$ 16,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Encantadora Caixa de Doces!
+                            Delicioso Brigadeiro Gourmet feito com Chocolate Nobre Meio Amargo. Doces que derretem na boca!
+                            Docinhos fresquinhos! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/6doces_sortidos.jpg' %}" alt="caixa com 6 doces sortidos ">
+                        <h2>Caixa com 6 doces sortidos </h2>
+                        <p>R$ 12,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Encantadora Caixa de Doces!
+                            Delicioso Brigadeiro Gourmet feito com Chocolate Nobre Meio Amargo, e Beijinho Gourmet!
+                            Doces que derretem na boca!
+                            Docinhos fresquinhos! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/bombom_morango.jpg' %}" alt="bombom de morango ">
+                        <h2>Bombom de Morango </h2>
+                        <p>R$ 12,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Tentador e Irresistível Bombom Aberto de Morango, sobremesa fresquinha preparada com Mousse Artesanal de Chocolate Branco, Morangos fresquinhos e selecionados e coberto com Ganache de Chocolate Meio Amargo Nobre. 
+                            Sobremesa fresquinha e na medida certa!
+                            Pote de 250ml. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/bombom_uva.jpg' %}" alt="bombom de uva ">
+                        <h2>Bombom de Uva </h2>
+                        <p>R$ 12,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Tentador e Irresistível Bombom Aberto de Uva, sobremesa fresquinha preparada com Mousse Artesanal de Chocolate Branco, Uvas fresquinhas e selecionadas e coberto com Ganache de Chocolate Meio Amargo Nobre. 
+                            Sobremesa fresquinha e na medida certa!
+                            Pote de 250ml. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/caixa_brigadeiro.jpg' %}" alt="caixa de brigadeiro ">
+                        <h2>Caixa de Brigadeiro </h2>
+                        <p>R$ 32,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Encantadora Caixa de Brigadeiros!
+                            Brigadeiro Gourmet feito com Chocolate Nobre, brigadeiros fresquinhos que derretem na boca! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/fatia_brownie_branco.jpg' %}" alt="fatia de brownie chocolate branco ">
+                        <h2>Brownie Chocolate Branco </h2>
+                        <p>R$ 17,00 </p>
+                    </div>
+                    <div class="produto-back">
+                        <p> Fabulosa e Incomparável fatia Brownie, com sabor intenso e casquinha crocante, feita com Chocolate Meio Amargo Nobre e coberta com Creme de Chocolate Branco Gourmet ou Brigadeiro Cremoso Gourmet e finalizado com Kit Kat e Morango.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/fatia_brownie_chocolate.jpg' %}" alt="fatia de brownie chocolate ">
+                        <h2>Brownie de Chocolate </h2>
+                        <p>R$ 17,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Fabulosa e Incomparável fatia Brownie, com sabor intenso e casquinha crocante, feita com Chocolate Meio Amargo Nobre e coberta com Creme de Chocolate Branco Gourmet ou Brigadeiro Cremoso Gourmet e finalizado com Kit Kat e Morango.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/mousse_limao.jpg' %}" alt="Mousse de limão ">
+                        <h2>Mousse de Limão </h2>
+                        <p>R$ 8,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Delicioso Mousse de limão, feito com chocolate branco e suco de limão, finalizado com raspas de limão. Uma combinação perfeita entre a cremosidade do chocolate branco  e o frescor do limão. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/pao_de_mel.jpg' %}" alt="Pão de mel recheo de doce de leite ">
+                        <h2>Pão de Mel Doce de Leite </h2>
+                        <p>R$ 5,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Fabuloso e Incomparável Pão de Mel Artesanal, recheado com um Delicioso Doce de Leite super cremoso, e coberto com uma casquinha crocante de Chocolate Meio Amargo Nobre. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/pave_ouro_branco.jpg' %}" alt="pave de ouro branco ">
+                        <h2>Pavê Ouro Branco </h2>
+                        <p>R$ 9,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Fabuloso e Incomparável Pavê Ouro Branco, feito com Mousse Artesanal de Leite Ninho, Bolacha Maisena, Mousse Gourmet de Nutella e o legítimo Bombom Ouro Branco. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/surpresa_morango.jpg' %}" alt="Surpresa de morango ">
+                        <h2>Surpresa de Morango </h2>
+                        <p>R$ 14,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Tentadora e Irresistível Surpresa de Morango, sobremesa fresquinha preparada com Creme Artesanal de Chocolate Branco, Morangos fresquinhos e selecionados e coberto com Ganache de Chocolate Meio Amargo Nobre. 
+                            Sobremesa fresquinha e na medida certa!
+                            Pote de 250ml. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/torta_alfajor.jpg' %}" alt="Torta alfajor ">
+                        <h2>Torta Alfajor </h2>
+                        <p>R$ 8,50</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Tentadora e Irresistível Torta Alfajor, sobremesa fresquinha preparada com Doce de Leite Cremoso, Bolacha Maria e Ganache Gourmet de Chocolate Meio Amargo Nobre. 
+                            Sobremesa fresquinha e na medida certa!
+                            Pote de 250ml.
+                             </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/torta_banoffe.jpg' %}" alt="Torta Banoffe ">
+                        <h2>Torta Banoffe </h2>
+                        <p>R$ 14,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Feito com Farofinha Crocante de Bolacha, Doce de Leite super Cremoso, Bananas Cuidadosamente selecionadas e canela em pó finalizado com Chantininho.
+                            pote de 250ml </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/torta_holandesa.jpg' %}" alt="Torta holandesa ">
+                        <h2>Torta Holandesa </h2>
+                        <p>R$ 10,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Fabulosa e Irresistível Torta Holandesa, torta super saborosa preparada com Farofa de Bolacha Maria, Mousse Artesanal de Cream Cheese, Ganache Gourmet de Chocolate Nobre e finalizado com a legitima Bolacha Calipso.
+                            Sobremesa fresquinha!
+                            Pote de 250ml. </p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/un_beijinho.jpg' %}" alt="Unidade de beijinho ">
+                        <h2>UN Beijinho </h2>
+                        <p>R$ 3,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Beijinho Gourmet feito com produtos de primeira linha, beijinho fresquinho que derrete na boca!
+                            Doce fresquinho.
+                            Unidade com 20g. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="produto-inner">
+                    <div class="produto-front">
+                        <img src="{% static 'images/produtos/doces_sobremesas/un_brigadeiro.jpg' %}" alt="unidade de brigadeiro ">
+                        <h2>UN Brigadeiro </h2>
+                        <p>R$ 3,00</p>
+                    </div>
+                    <div class="produto-back">
+                        <p>Brigadeiro Gourmet feito com Chocolate Nobre, brigadeiro fresquinho que derrete na boca!
+                            Doce fresquinho.
+                            Unidade com 20g. </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+    {% include "global/partials/_footer.html" %}
+    <script src="{% static 'js/flip_card.js' %}"></script>
+    
+</body>
+</html>

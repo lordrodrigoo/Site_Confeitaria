@@ -1,6 +1,24 @@
 {% load static %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <section class="menu-container">
+
+    <div id="icone-hamburguer" >
+      <span class="material-icons icon">menu</span>
+    </div>
+
+    {% comment %} menu hamburguer {% endcomment %}
+    <div class="menu-burguer">
+  
+        <li><a href="{% url "produtos" %}">Produtos</a></li>
+        <li><a href="{% url "bolos_decorados" %}">Bolos Decorados</a></li>
+        <li><a href="{% url "sobre" %}">Sobre</a></li>
+        <li><a href="https://www.ifood.com.br/delivery/sao-paulo-sp/confeitaria-dalia-bolos-e-sobremesas-vila-fernandes/8aa01342-582c-46f4-bec7-37faf062f735?UTM_Medium=share">Compre pelo ifood</a></li>
+        <li><a href="https://wa.me/5511995469412/" target='_blank'>
+          <img id="waths" src="{% static 'images/icon/whatsapp.png' %}" alt="wathsapp"/>
+        </a></li>
+    </div>
+
     <nav class="flex-left">
       <li><a href="{% url "produtos" %}">Produtos</a></li>
       <li><a href="{% url "bolos_decorados" %}">Bolos Decorados</a></li>
@@ -15,10 +33,14 @@
 
     <nav class="flex-right">
       <li><a href="https://www.ifood.com.br/delivery/sao-paulo-sp/confeitaria-dalia-bolos-e-sobremesas-vila-fernandes/8aa01342-582c-46f4-bec7-37faf062f735?UTM_Medium=share">Compre pelo ifood</a></li>
-        <img id="sacola" src="{% static 'images/svg/bag-heart-love.svg' %}" alt="sacola" />
+        
       </a></li>
-      <li><a href="#">
-        <img id="lupa" src="{% static 'images/svg/lupa.svg' %}" alt="lupa" />
+      <li><a href="https://wa.me/5511995469412">
+        <img id="whats" src="{% static 'images/icon/whatsapp.png' %}" alt="wathsapp" />
       </a></li>
     </nav>
-  </section>
+</section>
+
+
+
+  <script src="{% static 'js/menu.js' %}"></script>

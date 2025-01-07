@@ -1,0 +1,110 @@
+:root {
+    --font-color: #202020;
+    --maincontent-color: #f7eff4;
+    --pink-color: #ff91a4;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 300px;
+}
+
+.flex-left, .flex-right {
+    margin-top: 60px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 1.5rem;
+  }
+
+.page-title {
+    color: white;
+    background-color:  var(--pink-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+
+.produtos-container {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background: var(--maincontent-color);
+}
+
+
+.categorias-grid {
+    padding: 15px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categoria-item {
+    display: flex;
+    flex-direction: column; /* Faz com que a imagem e o título fiquem empilhados */
+    align-items: center;    /* Centraliza os itens (imagem e título) */
+    justify-content: center; /* Garante que o conteúdo fique bem alinhado no meio */
+    position: relative;
+}
+
+
+.categoria-item img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho sem distorcer */
+}
+
+.categoria-item:hover {
+    transform: scale(1.05);
+}
+
+.categoria-item h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 950px) {
+    .flex-left, .flex-right {
+        display: none;
+    }
+    .categorias-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .categorias-grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .categoria-item img {
+        object-fit: cover;  /* Ajusta a imagem para cobrir o container */
+        width: 100%;        /* Faz a imagem ocupar 100% da largura do container */
+        height: 100%;       /* Ajusta a altura para preencher o container */
+    }
+}
